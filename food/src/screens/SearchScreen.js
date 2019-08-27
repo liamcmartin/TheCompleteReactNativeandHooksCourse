@@ -5,7 +5,7 @@ import yelp from "../api/yelp";
 import useResults from "../hooks/useResults";
 import ResultsList from "../components/ResultsList";
 
-const SearchScreen = ({ navigation }) => {
+const SearchScreen = () => {
   //   console.log(props);
   const [term, setTerm] = useState(""); //set default to ''
   const [searchApi, results, errorMsg] = useResults(); // hook created to deal with api
@@ -35,17 +35,17 @@ const SearchScreen = ({ navigation }) => {
         <ResultsList
           filtredResults={filterResultsByPrice("$")}
           title='Cost Effective'
-          navigation={navigation} //passing down navigation prop so we can navigate from a child
+          //   navigation={navigation} //passing down navigation prop so we can navigate from a child
         />
         <ResultsList
           filtredResults={filterResultsByPrice("$$")}
           title='Bit Pricer'
-          navigation={navigation} //passing down navigation prop so we can navigate from a child
+          //   navigation={navigation} //passing down navigation prop so we can navigate from a child
         />
         <ResultsList
           filtredResults={filterResultsByPrice("$$$")}
           title='Big Spender'
-          navigation={navigation} //passing down navigation prop so we can navigate from a child
+          //   navigation={navigation} //passing down navigation prop so we can navigate from a child
         />
       </ScrollView>
       {/* </View> */}
