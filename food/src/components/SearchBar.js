@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 15,
     marginTop: 10,
-    flexDirection: "row"
+    flexDirection: "row",
+    marginBotttom: ""
   },
   textInput: {
     // borderColor: 'black',
